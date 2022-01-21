@@ -1,0 +1,123 @@
+
+@media screen and (max-width: 1200px) {
+    main {
+      background-image: url(https://www-growth.scdn.co/static/home/bursts-tablet.svg);
+      background-size: 153%;
+      background-position: right 40% center;
+    }
+  
+    header .container {
+      max-width: 992px;
+    }
+  
+    footer .container {
+      max-width: 992px;
+    }
+  
+    .main__title {
+      width: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    header .container {
+      max-width: 768px;
+    }
+    
+    footer .container {
+      max-width: 768px;
+    }
+  
+    main {
+      background-size: 130%;
+    }
+  
+    header {
+      height: 60px;
+    }
+  
+    .spotify__svg {
+      width: 90px;
+    }
+  
+    .menu__list {
+      display: none;
+    }
+  
+    .menu__line {
+      display: none;
+    }
+  
+    .menu__button .menu__link {
+      display: none;
+    }
+  
+    .burger {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      height: 1rem;
+    }
+  
+    .burger__line {
+      background: white;
+      width: 22px;
+      height: 3px;
+      border-radius: 1px;
+      transition: .2s all;
+      transform-origin: 20px;
+    }
+    
+    .footer__main {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .footer__about {
+      flex-direction: row;
+    }
+  
+    .footer__main svg {
+      margin-right: 0rem;
+      margin-bottom: 3rem;
+    }
+  
+    .subcontainer {
+      flex-direction: column;
+    }
+  
+    .about__column {
+      margin-bottom: 5rem;
+    }
+
+    .menu__dropdown {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about__column {
+      flex-direction: column;
+    }
+  
+    .about__title {
+      margin: 2rem 0;
+    }
+    
+    main {
+      background-size: 195%;
+      background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+      background-position: center top 30%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .main__title {
+      width: 300px;
+      font-size: 2.5rem;
+    }
+  
+    .footer__instititucional {
+      flex-wrap: wrap;
+    }
+  }

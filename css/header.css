@@ -1,0 +1,154 @@
+.burger {
+  display: none;
+  position: relative;
+  z-index: 9999999999999999999;
+}
+
+.x .burger__line:first-child {
+  transform: rotate(-45deg);
+  transition: 0.2s all;
+  transform-origin: 20px;
+
+}
+
+.x .burger__line:nth-child(2) {
+  display: none;
+}
+
+.x .burger__line:last-child {
+  transform: rotate(45deg);
+  transform-origin: 20px;
+  transition: 0.2s all;
+}
+
+header {
+  background: #000000;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.9px;
+  height: 80px;
+  width: 100%;
+}
+
+header .container {
+  margin: auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.spotify__svg {
+  fill: white;
+  width: 130px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 2rem;
+}
+
+.menu__line {
+  width: 1px;
+  background: white;
+  height: 1rem;
+}
+
+.menu__button {
+  display: flex;
+  background: black;
+  border: none;
+  padding: 0;
+  margin-left: 2rem;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu__dropdown {
+  position: absolute;
+  background: white;
+  top: 50px;
+  right: 1px;
+  z-index: 9999;
+  width: 160px;
+  height: 80px;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: initial;
+  display: none;
+  animation: .3s unmask;
+}
+
+.dropdown__list {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.dropdown__item:last-child .dropdown__link {
+  color: #919496;
+}
+
+.dropdown__item:last-child .dropdown__link:hover {
+  color: #3ce478;
+}
+
+.dropdown__item {
+  width: 100%;
+}
+
+.dropdown__link {
+  text-align: left;
+  color: black;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown__link:hover {
+  color: #3ce478;
+}
+
+.open {
+  display: block;
+}
+
+.menu__link:hover {
+  color: #3ce478;
+}
+
+.menu__dropdown::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -15px;
+  right: 7px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid #fff;
+}
+
+@keyframes unmask {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

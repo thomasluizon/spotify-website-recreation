@@ -1,2 +1,5 @@
 # spotify-website-recreation
- simple spotify brazilian website recreation i made using only html, css and javascript
+
+  ![recreation-screenshot](./Screenshot.png)
+
+This is a recreation of the brazilian spotify website, made exclusively by me.

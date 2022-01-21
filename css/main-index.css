@@ -1,0 +1,45 @@
+main {
+  height: calc(100vh - 80px);
+  background: #2941ab;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+  background-size: 175%;
+  background-position: 46% 4%;
+  background-repeat: no-repeat;
+}
+
+.main__title {
+  color: #3ce478;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  width: 900px;
+}
+
+.main__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__text {
+  color: #3ce478;
+  margin-bottom: 2rem;
+}
+
+.main__button {
+  display: inline-block;
+  background: #3ce478;
+  color: #2941ab;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+.main__button:hover {
+  transform: scale(1.05);
+}
